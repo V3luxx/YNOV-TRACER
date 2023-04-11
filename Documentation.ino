@@ -92,7 +92,7 @@
  *   - OUTPUT_LANGUAGE : Sélectionner "French"
  *   - EXTENSION_MAPPING : Ajouter "ino=c" à la liste
  * - Topics \b Input 
- *   - IMAGE_PATH : Ajouter "images" à la liste
+ *   - IMAGE_PATH : Ajouter 'images" à la liste
  *   - FILE_PATTERN : Ajouter "*.ino" à la liste
  * - Topics \b HTML
  *   - GENERATE_TREEVIEW : cocher l'option

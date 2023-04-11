@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['over_20the_20air_20_26_20remote_20debug_0',['Over The Air &amp; Remote Debug',['../ota.html',1,'']]]
+  ['network_20time_20protocol_20_28ntp_29_0',['Network Time Protocol (NTP)',['../ntp.html',1,'']]]
 ];

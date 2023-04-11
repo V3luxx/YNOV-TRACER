@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['loop_0',['loop',['../_io_t-_b2-0_8ino.html#afe461d27b9c48d5921c00d521181f12f',1,'IoT-B2-0.ino']]]
+  ['connectadafruitio_0',['connectAdafruitIO',['../_my_adafruit_i_o_8h.html#a3e26e52324eb9b84ec87cf776e2834b6',1,'MyAdafruitIO.h']]]
 ];

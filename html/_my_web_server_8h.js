@@ -1,5 +1,6 @@
 var _my_web_server_8h =
 [
+    [ "handleAdafruit", "_my_web_server_8h.html#a91087ee204811a09b20dacb39cdf787e", null ],
     [ "handleConfig", "_my_web_server_8h.html#a26b99cccf6c7e87054577b293e709733", null ],
     [ "handleNotFound", "_my_web_server_8h.html#a54f2b176a577c7a89bb94da4f12cd06b", null ],
     [ "handleRoot", "_my_web_server_8h.html#a8427468f39342a1990703e9f5ce7fd29", null ],

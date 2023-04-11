@@ -127,21 +127,12 @@ Macros</h2></td></tr>
 <tr class="memitem:a77c30673bd68f8fcbdc1d8a2dfa44bdf"><td class="memItemLeft" align="right" valign="top"><a id="a77c30673bd68f8fcbdc1d8a2dfa44bdf" name="a77c30673bd68f8fcbdc1d8a2dfa44bdf"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>FEED_HUMIDITY</b>&#160;&#160;&#160;&quot;/feeds/humidity&quot;</td></tr>
 <tr class="separator:a77c30673bd68f8fcbdc1d8a2dfa44bdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5aa1b6744ce16b032c0d12220c6265f8"><td class="memItemLeft" align="right" valign="top"><a id="a5aa1b6744ce16b032c0d12220c6265f8" name="a5aa1b6744ce16b032c0d12220c6265f8"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>FEED_ETATDESANTE</b>&#160;&#160;&#160;&quot;/feeds/MaximeBui-2/EtatDeSante&quot;</td></tr>
-<tr class="separator:a5aa1b6744ce16b032c0d12220c6265f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b707d862381024fdf97961f7a8370a2"><td class="memItemLeft" align="right" valign="top"><a id="a3b707d862381024fdf97961f7a8370a2" name="a3b707d862381024fdf97961f7a8370a2"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>FEED_ES_CONTACT</b>&#160;&#160;&#160;&quot;/feeds/MaximeBui-1/EtatDeSante&quot;</td></tr>
-<tr class="separator:a3b707d862381024fdf97961f7a8370a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3a3c16d29fe1a9d97e6948e2b6c2db9"><td class="memItemLeft" align="right" valign="top"><a id="ab3a3c16d29fe1a9d97e6948e2b6c2db9" name="ab3a3c16d29fe1a9d97e6948e2b6c2db9"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>FEED_FREQ</b>&#160;&#160;&#160;5</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>FEED_FREQ</b>&#160;&#160;&#160;15</td></tr>
 <tr class="separator:ab3a3c16d29fe1a9d97e6948e2b6c2db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Fonctions</h2></td></tr>
-<tr class="memitem:adc04f578f47ee328084ad27bf0e9dbe5"><td class="memItemLeft" align="right" valign="top"><a id="adc04f578f47ee328084ad27bf0e9dbe5" name="adc04f578f47ee328084ad27bf0e9dbe5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>timecallback</b> (uint32_t current)</td></tr>
-<tr class="separator:adc04f578f47ee328084ad27bf0e9dbe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84167b915d51a084344b40ccd43071f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_my_adafruit_i_o_8h.html#a84167b915d51a084344b40ccd43071f7">slidercallback</a> (double uiSliderValue)</td></tr>
 <tr class="separator:a84167b915d51a084344b40ccd43071f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acde56d836c642d84550e3a55c84ab936"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_my_adafruit_i_o_8h.html#acde56d836c642d84550e3a55c84ab936">onoffcallback</a> (char *data, uint16_t len)</td></tr>
@@ -166,9 +157,6 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>uiSliderValue</b>
 <tr class="memitem:a6aca2ff8eba9a1c9b5dfced163427e5a"><td class="memItemLeft" align="right" valign="top"><a id="a6aca2ff8eba9a1c9b5dfced163427e5a" name="a6aca2ff8eba9a1c9b5dfced163427e5a"></a>
 Ticker&#160;</td><td class="memItemRight" valign="bottom"><b>MyAdafruitTicker</b></td></tr>
 <tr class="separator:a6aca2ff8eba9a1c9b5dfced163427e5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83b7ff6a142c27ffdbfe683e2613939d"><td class="memItemLeft" align="right" valign="top"><a id="a83b7ff6a142c27ffdbfe683e2613939d" name="a83b7ff6a142c27ffdbfe683e2613939d"></a>
-Adafruit_MQTT_Subscribe&#160;</td><td class="memItemRight" valign="bottom"><b>timefeed</b> = Adafruit_MQTT_Subscribe(&amp;MyAdafruitMqtt, &quot;time/seconds&quot;)</td></tr>
-<tr class="separator:a83b7ff6a142c27ffdbfe683e2613939d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74532569d41acd6663edb256835cc862"><td class="memItemLeft" align="right" valign="top"><a id="a74532569d41acd6663edb256835cc862" name="a74532569d41acd6663edb256835cc862"></a>
 Adafruit_MQTT_Subscribe&#160;</td><td class="memItemRight" valign="bottom"><b>slider</b> = Adafruit_MQTT_Subscribe(&amp;MyAdafruitMqtt, IO_USERNAME FEED_SLIDER, MQTT_QOS_1)</td></tr>
 <tr class="separator:a74532569d41acd6663edb256835cc862"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -181,18 +169,6 @@ Adafruit_MQTT_Publish&#160;</td><td class="memItemRight" valign="bottom"><b>temp
 <tr class="memitem:a12ee55d20e534d89c01daebda54c8a68"><td class="memItemLeft" align="right" valign="top"><a id="a12ee55d20e534d89c01daebda54c8a68" name="a12ee55d20e534d89c01daebda54c8a68"></a>
 Adafruit_MQTT_Publish&#160;</td><td class="memItemRight" valign="bottom"><b>humidityFeed</b> = Adafruit_MQTT_Publish(&amp;MyAdafruitMqtt, IO_USERNAME FEED_HUMIDITY)</td></tr>
 <tr class="separator:a12ee55d20e534d89c01daebda54c8a68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90c2ace84e5523d06b7162ea5928acc1"><td class="memItemLeft" align="right" valign="top"><a id="a90c2ace84e5523d06b7162ea5928acc1" name="a90c2ace84e5523d06b7162ea5928acc1"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sec</b></td></tr>
-<tr class="separator:a90c2ace84e5523d06b7162ea5928acc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae612f94d9137165cbbeab354f62608e6"><td class="memItemLeft" align="right" valign="top"><a id="ae612f94d9137165cbbeab354f62608e6" name="ae612f94d9137165cbbeab354f62608e6"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>mini</b></td></tr>
-<tr class="separator:ae612f94d9137165cbbeab354f62608e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15df9ba285cfd842f284025f904edc9c"><td class="memItemLeft" align="right" valign="top"><a id="a15df9ba285cfd842f284025f904edc9c" name="a15df9ba285cfd842f284025f904edc9c"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>hour</b></td></tr>
-<tr class="separator:a15df9ba285cfd842f284025f904edc9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04e3be435248bf42067beed524d79fcb"><td class="memItemLeft" align="right" valign="top"><a id="a04e3be435248bf42067beed524d79fcb" name="a04e3be435248bf42067beed524d79fcb"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>timeZone</b> = 1</td></tr>
-<tr class="separator:a04e3be435248bf42067beed524d79fcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Documentation des fonctions</h2>
 <a id="a3e26e52324eb9b84ec87cf776e2834b6" name="a3e26e52324eb9b84ec87cf776e2834b6"></a>

@@ -37,6 +37,25 @@ var NAVTREE =
       [ "Port Série", "arduino.html#port", null ],
       [ "Modules", "arduino.html#modules", null ]
     ] ],
+    [ "Adafruit IO", "adafruitio.html", null ],
+    [ "Bluetooth Low Energy", "ble.html", null ],
+    [ "Utilisation du Core 0", "core0.html", null ],
+    [ "Debug", "debug.html", null ],
+    [ "Deep Sleep", "deepsleep.html", null ],
+    [ "Capteur de température et d'humidité", "dht.html", null ],
+    [ "LED & PWM", "led.html", null ],
+    [ "MQTT", "mqtt.html", null ],
+    [ "Network Time Protocol (NTP)", "ntp.html", null ],
+    [ "Over The Air & Remote Debug", "ota.html", null ],
+    [ "SPIFFS", "spiffs.html", null ],
+    [ "Tickers", "tickers.html", null ],
+    [ "Serveur Web", "webserver.html", null ],
+    [ "Wifi ESP32", "wifi.html", null ],
+    [ "Classes", "annotated.html", [
+      [ "Liste des classes", "annotated.html", "annotated_dup" ],
+      [ "Index des classes", "classes.html", null ],
+      [ "Hiérarchie des classes", "hierarchy.html", "hierarchy" ]
+    ] ],
     [ "Fichiers", "files.html", [
       [ "Liste des fichiers", "files.html", "files_dup" ],
       [ "Membres de fichier", "globals.html", [

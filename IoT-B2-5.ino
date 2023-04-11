@@ -1,4 +1,4 @@
-/**\file IoT-B2-0.ino 
+/**\file IoT-B2-5.ino 
  * \page arduino Fichier principal Arduino
  * 
  * \section fonc Fonctions principales
@@ -41,9 +41,32 @@
  * - \ref ota
  * - \ref mqtt
  * - \ref adafruitio
+ * - \ref mqtt
  * - \ref ble
 */
 
+#define MYDEBUG         1 
+
+// Variables globales, accessibles depuis tous les fichiers
+int i=0;              // pour la loop
+double dSliderValue;  // pour le slider
+bool bOnOffValue;     // pour l'état de la LED
+
+// ------------------------------------------------------------------------------------------------
+// MODULES
+#include "MyDebug.h"        // Debug
+#include "MyWiFi.h"         // WiFi
+#include "MySPIFFS.h"       // Flash File System
+#include "MyWebServer.h"    // Serveur Web
+//#include "MyNTP.h"          // Network Time Protocol
+//#include "MyDeepSleep.h"    // Deep Sleep
+//#include "MyTicker.h"       // Tickers
+#include "MyAdafruitIO.h"   // Adafruit MQTT
+//#include "MyBLE.h"          // BLE
+//#include "MyOTA.h"          // Over the air
+//#include "MyLED.h"          // LED
+//#include "MyDHT.h"          // Capteur de température et humidité
+#include "MyCore0.h"        // Utilisation du Core 0
 // ------------------------------------------------------------------------------------------------
 
 // ------------------------------------------------------------------------------------------------
@@ -55,11 +78,23 @@
 * Elle est à utiliser pour initialiser les variables, le sens des broches, les librairies utilisées. 
 */
 void setup() {
-  Serial.begin(230400); // Initialisation de la vitesse de communication du port série
-  Serial.println("Ouverture du port série");
+  setupDebug();         
+  MYDEBUG_PRINTLN("------------------- SETUP");
+  setupWiFi();        // Initialisation du WiFi
+  setupWebServer();   // Initialisation du Serveur Web
+  setupSPIFFS();      // Initialisation du système de fichiers
+//  setupTicker();      // Initialisation d'un ticker
+//  setupNTP();         // Initialisation de la connexion avec le serveur NTP (heure)
+//  getNTP();           // Récupération de l'heure
+  setupAdafruitIO();  // Initialisation Adafruit MQTT
+//  setupBLEServer();   // Initialisation du serveur BLE pour publier un ID
+//  setupBLEClient();   // Initialisation du client BLE pour scanner les ID à proximité
+//  setupOTA();         // Initialisation du mode Over The Air
+//  setupLED();         // Initialisation de la LED
+//  setupDhtSensor();   // Initialisation du capteur DHT
+  setupMyCore0();     // Initialisation du Core 0
 }
 
-int i=0;
 // ------------------------------------------------------------------------------------------------
 // LOOP
 // ------------------------------------------------------------------------------------------------
@@ -69,9 +104,11 @@ int i=0;
  * sans fin, permettant à votre programme de s'exécuter et de répondre.
 */
 void loop() {
-  Serial.print("[");
-  Serial.print(i++);
-  Serial.print("]");
-  Serial.println("Loop");
-  delay (2000);
+//  loopWebServer();
+  loopAdafruitIO();
+//  loopBLEClient();
+//  loopOTA();
+//  playWithLED();
+//  getDhtData();
+  delay(10);        // Délai pour que le CPU puisse passer à d'éventuelles autres tâches
 }

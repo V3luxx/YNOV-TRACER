@@ -111,12 +111,13 @@ $(document).ready(function(){initNavTree('_my_n_t_p_8h_source.html',''); initRes
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keywordtype">void</span> setupNTP(){</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="comment">// On a besoin d&#39;une connexion à Internet !</span></div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keywordflow">if</span> (WiFi.status() != WL_CONNECTED){</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    setupWiFi();</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <a class="code hl_function" href="_my_wi_fi_8h.html#ad2a97dbe5f144cd247e3b15c6af7c767">setupWiFi</a>();</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  }  </div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  timeClient.begin();</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <span class="comment">// Nous avons 1h de décalage avec le méridien de Greenwich (Greenwich Meridian Time : GMT).</span></div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  timeClient.setTimeOffset(3600);</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>}</div>
+<div class="ttc" id="a_my_wi_fi_8h_html_ad2a97dbe5f144cd247e3b15c6af7c767"><div class="ttname"><a href="_my_wi_fi_8h.html#ad2a97dbe5f144cd247e3b15c6af7c767">setupWiFi</a></div><div class="ttdeci">void setupWiFi()</div><div class="ttdef"><b>Definition:</b> MyWiFi.h:107</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

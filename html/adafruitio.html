@@ -97,7 +97,7 @@ $(document).ready(function(){initNavTree('adafruitio.html',''); initResizable();
 <p>Nous allons utiliser la plateforme Adafruit IO en guise de première approche de MQTT. Pour ce faire, installez la bibliothèque "Adafruit IO Arduino" ainsi que toutes ses dépendances.</p><ul>
 <li>Rendez vous sur la plateforme : <a href="https://io.adafruit.com/">https://io.adafruit.com/</a></li>
 <li>Enregistrez vous : <a href="https://accounts.adafruit.com/users/sign_up">https://accounts.adafruit.com/users/sign_up</a></li>
-<li>Une fois connecté, récupérez votre Aadafruit Key en cliquant sur "My Key"</li>
+<li>Une fois connecté, récupérez votre Aadafruit Active Key en cliquant sur "My Key" (clé jaune dans le bandeau),</li>
 <li>Copier vos identifiants pour Arduino (IO_USERNAME et IO_KEY) et coller dans la section configuration ci-dessous</li>
 <li><p class="startli">Dans la page des Feeds (topics MQTT), créer les Feeds suivants, sans les rattacher à un groupe :</p><ul>
 <li>slider</li>
@@ -125,6 +125,7 @@ $(document).ready(function(){initNavTree('adafruitio.html',''); initResizable();
 </li>
 </ul>
 <p>Documentation sur l'API MQTT : <a href="https://learn.adafruit.com/adafruit-io/mqtt-api">https://learn.adafruit.com/adafruit-io/mqtt-api</a> Voici un exemple de clients qui utilisent l'API MQTT : <a href="https://learn.adafruit.com/desktop-mqtt-client-for-adafruit-io/overview">https://learn.adafruit.com/desktop-mqtt-client-for-adafruit-io/overview</a> Vous pouvez aussi utiliser la REST API pour intéragir avec la plateforme Adafruit IO.</p>
+<p>Pour mieux comprendre le protocole MQTT, je vous invite à lire la page <a class="el" href="mqtt.html">MQTT</a></p>
 <h2>Bibliothèque à installer</h2>
 <p>Pour utiliser l'API MQTT d'Adafruit, installer :</p><ul>
 <li>Adafruit MQTT library by Adafruit : <a href="https://github.com/adafruit/Adafruit_MQTT_Library">https://github.com/adafruit/Adafruit_MQTT_Library</a></li>
